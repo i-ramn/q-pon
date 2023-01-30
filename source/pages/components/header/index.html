@@ -1,3 +1,14 @@
-<header>
-  test
+<header class="header">
+  @@include('top-head.html')
+  @@include('header-search.html')
+  <div class="adaptive-search">
+    <div class="container adaptive-search--container">
+        <div class="search search--adaptive">
+          <img class="search--icon" src="img/svg/search-icon.svg" alt="search icon">
+          <input class="input-reset search--input" type="text" placeholder="Поиск услуг" />
+          <button class="btn-reset search--btn">Поиск</button>
+        </div>
+    </div>
+  </div>
+  @@include('navigation.html')
 </header>

@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
@@ -110,7 +110,7 @@ h2 {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1140px
+  max-width: 1245px
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -133,106 +133,6 @@ h2 {
 
 .page--ios .dis-scroll {
   position: relative;
-}
-
-.btn {
-  font-size: 18px;
-  line-height: 22px;
-  color: $white;
-  &--square {
-    width: 263px;
-    height: 50px;
-    background: $button-gradient;
-    border-radius: 5px;
-  }
-  &--round {
-    width: 383px;
-    height: 70px;
-    border-radius: 60px;
-    background: linear-gradient(92.82deg, #FF4C4C 16.11%, #FF9090 104.36%);
-    box-shadow: 0 0 30px rgba(255, 76, 76, 0.5);
-  }
-  &--secondary {
-    background: $blue;
-    width: 179px;
-    height: 40px;
-    &--square {
-    border-radius: 5px;
-    }
-    &--round {
-      border-radius: 60px;
-    }
-  }
-
-}
-
-.burger {
-  --burger-width: 35px;
-  --burger-height: 19px;
-  --burger-line-height: 2px;
-  position: absolute;
-  z-index: 1000;
-  border: none;
-  padding: 0;
-  width: var(--burger-width);
-  height: var(--burger-height);
-  color: $white;
-  background-color: transparent;
-  cursor: pointer;
-  display: block;
-}
-
-.burger::before,
-.burger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: var(--burger-line-height);
-  background-color: $white;
-  border-radius: 50px;
-  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-}
-
-.burger::before {
-  top: 0;
-}
-
-.burger::after {
-  top: calc(100% - var(--burger-line-height));
-}
-
-.burger__line {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: var(--burger-line-height);
-  background-color: currentColor;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 50px;
-}
-
-.burger--active::before {
-  top: 50%;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-}
-
-.burger--active::after {
-  top: 50%;
-  transform: rotate(-45deg);
-  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-}
-
-.burger--active .burger__line {
-  transform: scale(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.burger:focus::after {
-  opacity: 1;
 }
 
 

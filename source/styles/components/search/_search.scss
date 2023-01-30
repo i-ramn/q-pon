@@ -1,0 +1,41 @@
+.search {
+  width: 100%;
+  height: 49px;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  background: $white;
+  @include media-breakpoint-down(sm) {
+    height: 40px;
+  }
+  &--icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+  &--input {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    color: $grey;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    &:focus {
+      outline:none;
+      color: $black;
+    }
+  }
+  &--btn {
+    background-color: $blue;
+    width: 156px;
+    height: 100%;
+    font-size: 18px;
+    color: $white;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+}

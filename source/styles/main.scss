@@ -4,4 +4,11 @@
 @import "utils/media-query";
 @import "settings";
 
+@import "./mixins/burger";
+
 @import "./components/header/header";
+@import "./components/header/top-head";
+@import "./components/header/header-search";
+@import "./components/header/navigation";
+
+@import "./components/search/search";
