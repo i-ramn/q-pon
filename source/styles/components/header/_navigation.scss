@@ -1,10 +1,13 @@
 .header-navigation--container {
-
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
 }
 .header-navigation {
   width: 100%;
   height: 58px;
   background: $blue;
+  position: relative;
   @include media-breakpoint-down(sm) {
     padding-top: 23px;
     padding-bottom: 24px;
@@ -20,7 +23,7 @@
       align-items: flex-start;
       grid-gap: 20px;
     }
-    & p {
+    &--item {
       display: flex;
       align-items: center;
       height: 90%;
@@ -30,14 +33,27 @@
       padding-left: 17px;
       padding-right: 17px;
       white-space: nowrap;
+      &::after {
+        content: url("../img/svg/arrow-down.svg");
+        margin-left: 11px;
+        margin-top: -2px;
+        @include media-breakpoint-down(md) {
+          margin-left: 2px;
+        }
+        @include media-breakpoint-down(sm) {
+          margin-left: 11px;
+        }
+      }
       @include media-breakpoint-up(md) {
         &:hover {
           background: $white;
           color: $blue;
           border-radius: 20px 20px 0 0;
+          &::after {
+            content: url("../img/svg/arrow-down-blue.svg");
+          }
         }
       }
-
       @include media-breakpoint-down(lg) {
         padding-left: 5px;
         padding-right: 5px;
@@ -57,13 +73,15 @@
 /////////////////
 
 .header-navigation--options {
-  display: none;
+  display: flex;
+  position: absolute;
+  width: 100%;
+
   &--container {
-    padding-left: 50px;
-    display: flex;
-    gap: 70px;
+
   }
-  &--visible {
-    display: block;
-  }
+}
+
+.visible {
+  display: block;
 }

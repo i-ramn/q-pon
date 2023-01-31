@@ -3,6 +3,7 @@
   height: 47px;
   background-color: $light-grey;
   @include media-breakpoint-down(sm) {
+    display: none;
     height: auto;
     padding-top: 26px;
     padding-bottom: 26px;
@@ -51,4 +52,8 @@
     color: $secondary-gray;
     white-space: nowrap;
   }
+}
+
+.visible {
+  display: block;
 }

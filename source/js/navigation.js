@@ -4,7 +4,12 @@ const headerNavOptions = document.querySelector('.header-navigation--options')
 const ACTIVE_NAV = 'header-navigation--options--visible'
 
 navItem.forEach(el => {
-  return el.addEventListener("mouseup", () => {
-    headerNavOptions.classList.toggle('header-navigation--options--visible')
-  })
+
+  //  el.addEventListener("mouseover", () => {
+  //   headerNavOptions.classList.add('header-navigation--options--visible')
+  // })
+  //
+  // el.addEventListener('mouseleave', () => {
+  //   headerNavOptions.classList.remove('header-navigation--options--visible')
+  // })
 })

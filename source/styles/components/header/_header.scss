@@ -13,12 +13,17 @@
   .adaptive-search {
     display: none;
     @include media-breakpoint-down(sm) {
-      display: block;
+      //display: block;
       grid-row: 2/3;
     }
     &--container {
       padding-top: 24px;
       padding-bottom: 31px;
+    }
+  }
+  &--visible {
+    @include media-breakpoint-down(sm) {
+      display: block;
     }
   }
 }
