@@ -8,10 +8,13 @@
   height: 58px;
   background: $blue;
   position: relative;
+  margin-bottom: 30px;
   @include media-breakpoint-down(sm) {
     padding-top: 23px;
     padding-bottom: 24px;
     height: auto;
+    margin-bottom: 0;
+
   }
   &--inner-container {
     height: 100%;
