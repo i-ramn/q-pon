@@ -22,7 +22,7 @@
   }
   &--top {
     position: absolute;
-    top: 5px;
+    top: 17px;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -37,6 +37,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        width: 63px;
+        height: 28px;
+      }
     }
   }
   &--description {
@@ -47,18 +52,27 @@
       font-weight: 600;
       font-size: 17px;
       line-height: 120%;
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+      }
     }
     & p:nth-child(2) {
       font-weight: 500;
       font-size: 14px;
       line-height: 120%;
       color: $secondary-gray;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
     }
     & p:nth-child(3) {
       font-weight: 700;
       font-size: 14px;
       line-height: 140%;
       color: $grey;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
     }
   }
   &--price {
@@ -66,17 +80,26 @@
     justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 15px;
+    @include media-breakpoint-down(xl) {
+      margin-top: 0;
+    }
     & p:nth-child(1) {
       font-weight: 700;
       font-size: 23.25px;
       line-height: 120%;
       color: $blue;
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
     }
     & p:nth-child(2) {
       font-weight: 600;
       font-size: 14px;
       line-height: 140%;
       color: $light-grey2;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
     }
   }
 }
