@@ -2,8 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 32px;
+  margin-bottom: 160px;
   @include media-breakpoint-down(sm) {
     grid-template-columns: 1fr;
+    margin-bottom: 60px;
   }
   & .filter--container {
     grid-row: 1/4;
