@@ -1,4 +1,5 @@
 .header-navigation--container {
+  position: relative;
   @include media-breakpoint-down(sm){
     display: none;
   }
@@ -7,14 +8,12 @@
   width: 100%;
   height: 58px;
   background: $blue;
-  position: relative;
   margin-bottom: 30px;
   @include media-breakpoint-down(sm) {
     padding-top: 23px;
     padding-bottom: 24px;
     height: auto;
     margin-bottom: 0;
-
   }
   &--inner-container {
     height: 100%;
@@ -27,8 +26,6 @@
       grid-gap: 20px;
     }
     &--item {
-      display: flex;
-      align-items: center;
       height: 90%;
       margin: 0;
       color: $white;
@@ -36,17 +33,29 @@
       padding-left: 17px;
       padding-right: 17px;
       white-space: nowrap;
-      &::after {
-        content: url("../img/svg/arrow-down.svg");
-        margin-left: 11px;
-        margin-top: -2px;
-        @include media-breakpoint-down(md) {
-          margin-left: 2px;
-        }
-        @include media-breakpoint-down(sm) {
-          margin-left: 11px;
+      &:hover .header-navigation--inner-container--item--title {
+        &::after {
+          content: url("../img/svg/arrow-down-blue.svg");
         }
       }
+      &--title {
+        white-space: nowrap;
+        &::after {
+          content: url("../img/svg/arrow-down.svg");
+          margin-left: 11px;
+          margin-top: -2px;
+          @include media-breakpoint-down(md) {
+            margin-left: 2px;
+          }
+          @include media-breakpoint-down(sm) {
+            margin-left: 11px;
+          }
+        }
+      }
+      &:hover .header-navigation--inner-container--item--dropdown {
+          display: block;
+      }
+
       @include media-breakpoint-up(md) {
         &:hover {
           background: $white;
@@ -66,6 +75,47 @@
       @include media-breakpoint-down(md) {
         font-size: 12px;
       }
+      &--dropdown {
+        padding-top: 67px;
+        padding-bottom: 80px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        color: $secondary-gray;
+        display: none;
+        background: $white;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        left: 0;
+        border-radius: 0 0 40px 40px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+        @include media-breakpoint-down(lg) {
+          padding-top: 5%;
+          padding-bottom: 5%;
+        }
+        @include media-breakpoint-down(sm) {
+          box-shadow: none;
+          position: static;
+          border-radius: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background: $blue;
+          color:$white;
+          font-size: 12px;
+        }
+        & p {
+          margin: 0;
+        }
+        &--container {
+          display: flex;
+          gap: 20px;
+          @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            padding: 0;
+          }
+        }
+      }
     }
   }
   &--button {
@@ -79,12 +129,10 @@
   display: flex;
   position: absolute;
   width: 100%;
-
   &--container {
 
   }
 }
-
 .visible {
   display: block;
 }
