@@ -1,85 +1,55 @@
 <main>
   <div class="container categories">
-    <div class="company">
-      <div class="company--title">
-        <span>Адидас</span>
+    <div class="category">
+      <div class="category--title">
+        <p>Действующие купоны<span>12 купонов</span></p>
       </div>
-      <button class="company--button">Показать на карте</button>
-      <button class="company--button company--button--mobile">Показать</button>
+      <button class="category--button">Показать на карте</button>
+      <button class="category--button category--button--mobile">Показать</button>
     </div>
     <div class="filter--container">
       <div class="filter">
         <div class="filter--title">
-          <div class="filter--option">
-            <p>Популярное</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+          <div class="filter--title--container">
+            <p class="filter--title--container--name">Красота</p>
           </div>
         </div>
         <div class="filter--list">
           <div class="filter--option">
-            <p>Все</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Шугаринг</p>
+            </div>
           </div>
           <div class="filter--option">
-            <p>Рестораны / доставка</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Эпляция</p>
+            </div>
           </div>
           <div class="filter--option">
-            <p>Красота</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Уход за волосами</p>
+            </div>
           </div>
           <div class="filter--option">
-            <p>Здоровье</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Маникюр</p>
+            </div>
           </div>
           <div class="filter--option">
-            <p>Развлечения</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Массаж</p>
+            </div>
           </div>
           <div class="filter--option">
-            <p>Услуги</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
-          </div>
-          <div class="filter--option">
-            <p>Товары</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
-          </div>
-          <div class="filter--option">
-            <p>Авто</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
-          </div>
-          <div class="filter--option">
-            <p>Обучение</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
-          </div>
-          <div class="filter--option">
-            <p>Дети</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
-          </div>
-          <div class="filter--option">
-            <p>Разное</p>
-            <img src="img/svg/arrow-down-blue.svg" alt="arrow">
+            <div class="filter--option--inner">
+              <p>Косметология</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="items">
-      <div class="company-card">
-        <div class="company-card--image-container">
-          <img class="company-card--logo" src="img/svg/adidas.svg" alt="logo">
-        </div>
-        <div class="company-card--description company-card--description--title">
-          <p>Адисас в две строки
-            <br />
-            название</p>
-        </div>
-        <div class="company-card--description company-card--description--details">
-          <p>Категория: <span>Красота</span></p>
-          <p>Адрес: <span>г.Самара, ул. Ленина, 19.</span></p>
-          <p>Скидки: <span>от 50%</span></p>
-        </div>
-        <p class="company-card--description--amount"  >345 купонов </p>
-      </div>
+      @@include('../itemCard/index.html')
       @@include('../itemCard/index.html')
       @@include('../itemCard/index.html')
       @@include('../itemCard/index.html')
