@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   height: 100%;
-  margin-bottom: 63px;
   @include media-breakpoint-down(md) {
     grid-template-columns: 1fr
   }
@@ -12,22 +11,26 @@
   }
   &--categories {
     padding-top: 36px;
+    margin-bottom: 63px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     min-width: 665px;
     padding-left: 120px;
+    padding-right: 50px;
     @include media-breakpoint-down(xl) {
       gap: 10px;
       padding-left: 60px;
+      padding-right: 15px;
+
     }
     @include media-breakpoint-down(lg) {
       gap: 10px;
       padding-left: 15px;
-      grid-row: 2;
     }
     @include media-breakpoint-down(md) {
       min-width: auto;
+      grid-row: 2;
     }
     @include media-breakpoint-down(sm) {
       grid-template-columns: 1fr;
