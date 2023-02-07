@@ -3,20 +3,25 @@
 @import "fonts";
 @import "utils/media-query";
 @import "settings";
-
 @import "./mixins/burger";
 
+//header
 @import "./components/header/header";
 @import "./components/header/top-head";
 @import "./components/header/header-search";
 @import "./components/header/navigation";
+@import "./components/search/search";
 
-@import "./components/categories/categories";
-@import "./components/advantages/advantages";
-@import "components/about-us/about-us";
-
+//footer
 @import "./components/footer/footer";
 
-@import "./components/search/search";
+//common components
+@import "./components/itemCard/item-card";
+@import "./components/categories/categories";
 @import "./components/swiper/swiper";
 @import "./components/itemCard/item-card";
+
+//pages
+@import "./components/map-page/map-page";
+@import "./components/advantages/advantages";
+@import "./components/about-us/about-us";

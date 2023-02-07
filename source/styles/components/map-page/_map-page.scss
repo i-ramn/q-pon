@@ -1,0 +1,83 @@
+.map-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 100%;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr
+  }
+  & p {
+    margin: 0
+  }
+  &--categories {
+    padding-top: 36px;
+    margin-bottom: 63px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    min-width: 665px;
+    padding-left: 120px;
+    padding-right: 50px;
+    @include media-breakpoint-down(xl) {
+      gap: 10px;
+      padding-left: 60px;
+      padding-right: 15px;
+
+    }
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+      padding-left: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      min-width: auto;
+      grid-row: 2;
+    }
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
+    &--head {
+      grid-column: 1/3;
+      grid-row: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        grid-column: 1/2;
+      }
+      &--title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+        &::after {
+          content: url("../img/svg/arrow-down-black.svg");
+          margin-left: 14px;
+          @include media-breakpoint-down(sm) {
+            margin-left: 10px;
+          }
+        }
+      }
+      &--selector {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        &::before {
+          content: url("../img/svg/list.svg");
+          margin-right: 20px;
+          @include media-breakpoint-down(sm) {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  &--map {
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+}
