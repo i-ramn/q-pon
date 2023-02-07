@@ -57,7 +57,7 @@ gulp.task("css", (done) => {
                 cascade: true,
             })
         )
-        .pipe(minifyCss())
+        // .pipe(minifyCss())
         .pipe(gulp.dest(path.css.dest))
         .pipe(browserSync.stream());
     done();
@@ -89,11 +89,11 @@ gulp.task("scripts", (cb) => {
     pump(
         [
             gulp.src(path.scripts.source),
-            babel({
-                presets: ["@babel/env"],
-            }),
+            // babel({
+            //     presets: ["@babel/env"],
+            // }),
             concat("script.js"),
-            uglify(),
+            // uglify(),
             gulp.dest(path.scripts.dest),
         ],
         cb

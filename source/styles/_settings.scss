@@ -50,13 +50,13 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 50px;
-  line-height: 61px;
-
+  font-size: 36px;
+  line-height: 120%;
+  color: $black;
+  margin: 0;
   @include media-breakpoint-down(md) {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 120%;
   }
 }
 
