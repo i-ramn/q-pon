@@ -1018,16 +1018,27 @@ footer {
   height: 8px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .categories .filter--option img {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
 }
-.categories .filter:hover .filter--list {
-  display: block;
+.categories .filter .arrow-icon--active {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .categories .filter--list {
   margin-top: -30px;
@@ -1039,6 +1050,9 @@ footer {
 @media (max-width: 767.98px) {
   .categories .filter--list {
     display: none;
+  }
+  .categories .filter--list--active {
+    display: block;
   }
 }
 @media (max-width: 767.98px) and (max-width: 767.98px) {
