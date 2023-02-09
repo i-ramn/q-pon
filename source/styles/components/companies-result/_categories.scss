@@ -116,14 +116,4 @@
     }
   }
 }
-.show-more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  cursor: pointer;
-  &--title {
-    font-weight: 500;
-    color: $blue;
-  }
-}
+
