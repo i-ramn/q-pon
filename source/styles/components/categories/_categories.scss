@@ -67,9 +67,12 @@
       }
     }
     .arrow-icon--active {
-      transition: 0.3s;
-      transform: rotate(180deg);
+      @include media-breakpoint-down(sm) {
+        transition: 0.3s;
+        transform: rotate(180deg);
+      }
     }
+
     &--list {
       margin-top: -30px;
       display: block;

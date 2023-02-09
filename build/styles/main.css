@@ -1032,13 +1032,15 @@ footer {
             transform: rotate(-90deg);
   }
 }
-.categories .filter .arrow-icon--active {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+@media (max-width: 767.98px) {
+  .categories .filter .arrow-icon--active {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 .categories .filter--list {
   margin-top: -30px;
