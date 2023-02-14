@@ -1,0 +1,68 @@
+.promo-code-addresses {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 80px;
+  }
+  &--label {
+    background-color: $blue;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 120%;
+    max-width: 160px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    color: $white;
+    padding: 15px 40px;
+    @include media-breakpoint-down(md) {
+      font-size: 0.75rem;
+    }
+  }
+  &--map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid $light-grey2;
+    border-radius: 0 10px 10px 10px;
+    padding: 2.688rem 1.813rem 1.938rem 2.125rem;
+    @include media-breakpoint-down(md) {
+      padding: 1.25rem 0.813rem 0.813rem 0.813rem
+    }
+
+    &--addresses {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      &--address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.938rem;
+        font-weight: 600;
+        color: $secondary-gray;
+        @include media-breakpoint-down(lg) {
+          gap: 0.3rem;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 0.75rem;
+        }
+        &:last-child {
+          margin-right: 32px;
+          @include media-breakpoint-down(sm) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &--map {
+      min-height: 483px;
+      border-radius: 9px;
+    }
+  }
+
+}

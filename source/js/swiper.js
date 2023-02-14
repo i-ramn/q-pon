@@ -1,4 +1,6 @@
-const swiper = new Swiper(".mySwiper", {
+const headerSwiper = document?.querySelector('.mySwiper')
+
+const swiper = headerSwiper && new Swiper(headerSwiper, {
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",

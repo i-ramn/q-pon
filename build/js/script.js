@@ -55,15 +55,43 @@ const qPonFilterTitleArrow = document.querySelector('.filter--title--arrow-sm')
 const arrowIcon = document.querySelector('.arrow-icon')
 
 
-qPonFilter.addEventListener('click', (event) => {
+qPonFilter?.addEventListener('click', (event) => {
   qPonFilterList.classList.toggle('filter--list--active')
   qPonFilterTitle.classList.toggle('filter--title--active')
   qPonFilterTitleArrow.classList.toggle('filter--title--arrow-sm--active')
   arrowIcon.classList.toggle('arrow-icon--active')
 })
 
+const tabs = document?.querySelectorAll('.tabs--button')
+const tabContent = document?.querySelectorAll('.tabs--content--panel')
 
-const swiper = new Swiper(".mySwiper", {
+const handleTabToggle = () => {
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.target)
+
+      tabContent.forEach(el => {
+        el.classList.remove('is-active')
+      })
+
+      target.classList.add('is-active')
+
+      tabs.forEach(el => {
+        el.classList.remove('is-active')
+      })
+
+      tab.classList.add('is-active')
+    })
+  })
+}
+
+if (tabs && tabContent) {
+  handleTabToggle()
+}
+
+const headerSwiper = document?.querySelector('.mySwiper')
+
+const swiper = headerSwiper && new Swiper(headerSwiper, {
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",

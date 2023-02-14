@@ -2118,6 +2118,9 @@ footer {
   }
 }
 
+.promo-code {
+  margin-bottom: 84px;
+}
 .promo-code--container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2439,6 +2442,172 @@ footer {
     height: 41px;
   }
 }
+.tabs {
+  margin-bottom: 62px;
+}
+@media (max-width: 767.98px) {
+  .tabs {
+    margin-bottom: 17px;
+  }
+}
+.tabs--button-container {
+  font-size: 0;
+}
+.tabs--button {
+  background: #F3F2F5;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 15px 25px;
+  line-height: 120%;
+}
+@media (max-width: 991.98px) {
+  .tabs--button {
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 120%;
+  }
+}
+.tabs--button.is-active {
+  background: #3C5ABC;
+  color: white;
+}
+.tabs--button--left {
+  border-radius: 10px 0 0 0;
+}
+.tabs--button--right {
+  border-radius: 0 10px 0 0;
+}
+.tabs--content--container {
+  border: 1px solid #D0D0D0;
+  border-radius: 0 10px 10px 10px;
+  padding: 38px 43px;
+  font-size: 1.125rem;
+  color: #8D899B;
+  line-height: 140%;
+  font-weight: 500;
+}
+@media (max-width: 991.98px) {
+  .tabs--content--container {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 140%;
+  }
+}
+.tabs--content--panel {
+  display: none;
+}
+.tabs--content--panel.is-active {
+  display: block;
+}
+
+.promo-code-addresses {
+  margin-bottom: 120px;
+}
+@media (max-width: 767.98px) {
+  .promo-code-addresses {
+    margin-bottom: 80px;
+  }
+}
+.promo-code-addresses--label {
+  background-color: #3C5ABC;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 120%;
+  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  padding: 15px 40px;
+}
+@media (max-width: 991.98px) {
+  .promo-code-addresses--label {
+    font-size: 0.75rem;
+  }
+}
+.promo-code-addresses--map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  border: 1px solid #D0D0D0;
+  border-radius: 0 10px 10px 10px;
+  padding: 2.688rem 1.813rem 1.938rem 2.125rem;
+}
+@media (max-width: 991.98px) {
+  .promo-code-addresses--map-container {
+    padding: 1.25rem 0.813rem 0.813rem 0.813rem;
+  }
+}
+.promo-code-addresses--map-container--addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767.98px) {
+  .promo-code-addresses--map-container--addresses {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+  }
+}
+.promo-code-addresses--map-container--addresses--address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.938rem;
+  font-weight: 600;
+  color: #5C5C5C;
+}
+@media (max-width: 1199.98px) {
+  .promo-code-addresses--map-container--addresses--address {
+    gap: 0.3rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .promo-code-addresses--map-container--addresses--address {
+    font-size: 0.75rem;
+  }
+}
+.promo-code-addresses--map-container--addresses--address:last-child {
+  margin-right: 32px;
+}
+@media (max-width: 767.98px) {
+  .promo-code-addresses--map-container--addresses--address:last-child {
+    margin-right: 0;
+  }
+}
+.promo-code-addresses--map-container--map {
+  min-height: 483px;
+  border-radius: 9px;
+}
+
 .map-page {
   display: grid;
   grid-template-columns: 1fr 1fr;

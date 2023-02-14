@@ -23,7 +23,10 @@
 @import "./components/company-head/_company-head.scss";
 @import "./components/swiper/swiper";
 @import "./components/itemCard/item-card";
-@import "./components/promocode-head/promocode-head";
+
+@import "./components/promo-code/promocode-head";
+@import "./components/promo-code/_tabs";
+@import "./components/promo-code/_addresses";
 //pages
 @import "./components/map-page/map-page";
 @import "./components/advantages/advantages";
