@@ -1,0 +1,58 @@
+.received-code {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  margin-bottom: 168px;
+  &--title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 44px;
+    @include media-breakpoint-down(sm) {
+      font-size: 0.875rem;
+    }
+    & img {
+      margin-right: 1.125rem;
+    }
+  }
+  &--form {
+    background: $light-grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 34px;
+    padding-bottom: 43px;
+    &--container {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-down(sm) {
+        width: 90%;
+      }
+    }
+    &--title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 150%;
+      margin-bottom: 32px;
+    }
+    &--input {
+      width: 100%;
+      text-align: center;
+      font-size: 3.75rem;
+      border: 1px solid $light-grey2;
+      border-radius: 5px;
+      &::placeholder {
+        color: $light-grey3
+      }
+    }
+    &--retry {
+      text-align: center;
+      font-size: 0.875rem;
+      color: $grey;
+      cursor: pointer;
+    }
+  }
+}

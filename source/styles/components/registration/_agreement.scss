@@ -1,0 +1,23 @@
+.agreement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 241px;
+  &--input-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.875rem;
+    color: #272628;
+    & input[type=checkbox] {
+      transform: scale(1.2);
+      border: 1px solid $light-grey4;
+      border-radius: 3px
+    }
+
+  }
+  & button {
+    margin-top: 12px;
+    width: 100%;
+  }
+}

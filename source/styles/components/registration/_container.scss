@@ -1,0 +1,53 @@
+.registration {
+  &--container {
+    max-width: 736px;
+  }
+  &--top {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &--title-container {
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+    }
+    &--title {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-size: 1.875rem;
+      font-weight: 600;
+      line-height: 37px;
+      margin: 0;
+    }
+    &--subtitle {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $secondary-gray;
+    }
+    &--buttons {
+
+    }
+    &--button {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 20px;
+      color: $grey;
+      border-radius: 5px;
+      padding: 10px 23px;
+      &--active {
+        background-color: $blue;
+        color: $white;
+
+      }
+    }
+  }
+}

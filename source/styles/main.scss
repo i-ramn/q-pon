@@ -25,9 +25,15 @@
 @import "./components/itemCard/item-card";
 
 @import "./components/promo-code/promocode-head";
-@import "./components/promo-code/_tabs";
-@import "./components/promo-code/_addresses";
-@import "./components/promo-code/_gallery";
+@import "./components/promo-code/tabs";
+@import "./components/promo-code/addresses";
+@import "./components/promo-code/gallery";
+
+@import "./components/registration/_container";
+@import "./components/registration/partner-form";
+@import "./components/registration/recieved-code";
+@import "./components/registration/agreement";
+
 //pages
 @import "./components/map-page/map-page";
 @import "./components/advantages/advantages";
