@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 15px;
   margin-bottom: 241px;
+  margin-top: 87px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 40px;
+  }
   &--input-container {
     display: flex;
     align-items: flex-start;

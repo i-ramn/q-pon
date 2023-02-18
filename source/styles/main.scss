@@ -29,10 +29,10 @@
 @import "./components/promo-code/addresses";
 @import "./components/promo-code/gallery";
 
-@import "./components/registration/_container";
-@import "./components/registration/partner-form";
-@import "./components/registration/recieved-code";
-@import "./components/registration/agreement";
+@import "components/registration-partner/_container";
+@import "components/registration-partner/partner-form";
+@import "components/registration-partner/recieved-code";
+@import "components/registration-partner/agreement";
 
 //pages
 @import "./components/map-page/map-page";

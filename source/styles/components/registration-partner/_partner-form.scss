@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 11px;
   margin-bottom: 120px;
+  margin-top: 38px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 40px;
+  }
   &--lower {
     display: grid;
     grid-template-columns: 1fr 1fr;

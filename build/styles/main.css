@@ -2825,6 +2825,12 @@ footer {
           flex-direction: column;
   gap: 11px;
   margin-bottom: 120px;
+  margin-top: 38px;
+}
+@media (max-width: 767.98px) {
+  .partner-form {
+    margin-top: 40px;
+  }
 }
 .partner-form--lower {
   display: grid;
@@ -2902,6 +2908,12 @@ footer {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   margin-bottom: 168px;
+  margin-top: 24px;
+}
+@media (max-width: 767.98px) {
+  .received-code {
+    margin-top: 20px;
+  }
 }
 .received-code--title {
   display: -webkit-box;
@@ -3001,6 +3013,12 @@ footer {
           flex-direction: column;
   gap: 15px;
   margin-bottom: 241px;
+  margin-top: 87px;
+}
+@media (max-width: 767.98px) {
+  .agreement-form {
+    margin-top: 40px;
+  }
 }
 .agreement-form--input-container {
   display: -webkit-box;
