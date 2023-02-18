@@ -3043,6 +3043,112 @@ footer {
   width: 100%;
 }
 
+.user-registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-bottom: 262px;
+}
+@media (max-width: 767.98px) {
+  .user-registration-form {
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+}
+.user-registration-form--button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 17px;
+}
+@media (max-width: 767.98px) {
+  .user-registration-form--button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 43px;
+  }
+}
+.user-registration-form--button-container--send-code {
+  border: 0.832298px solid #3C5ABC;
+  border-radius: 24.9689px;
+  color: #3C5ABC;
+  font-weight: 600;
+  font-size: 11.6522px;
+  line-height: 140%;
+  width: 134px;
+  height: 38px;
+}
+.user-registration-form--button-container--next-step {
+  width: 224px;
+  height: 54px;
+  color: white;
+  background-color: #3C5ABC;
+  border-radius: 5px;
+  background-image: url("../img/svg/next-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 70% center;
+}
+
+.user-agreement-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  margin-top: 28px;
+  margin-bottom: 102px;
+}
+@media (max-width: 767.98px) {
+  .user-agreement-form {
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+}
+.user-agreement-form--title {
+  margin-top: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #5C5C5C;
+}
+.user-agreement-form--title img {
+  margin-top: 5px;
+  width: 20px;
+  height: 16px;
+}
+.user-agreement-form--checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
 .map-page {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,0 +1,40 @@
+.user-registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 262px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  &--button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      gap: 43px;
+    }
+    &--send-code {
+      border: 0.832298px solid $blue;
+      border-radius: 24.9689px;
+      color: $blue;
+      font-weight: 600;
+      font-size: 11.6522px;
+      line-height: 140%;
+      width: 134px;
+      height: 38px;
+    }
+    &--next-step {
+      width: 224px;
+      height: 54px;
+      color: $white;
+      background-color: $blue;
+      border-radius: 5px;
+      background-image: url("../img/svg/next-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 70% center;
+    }
+  }
+}
