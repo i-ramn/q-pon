@@ -1,0 +1,42 @@
+.personal-cabinet-null {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 223px;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+    padding-bottom: 80px;
+  }
+}
+.null-advertisements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--container {
+    width: 704px;
+    height: 282px;
+    background: $light-grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 29px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+    & h3 {
+      max-width: 209px;
+      text-align: center;
+
+    }
+    & span {
+      color: $blue;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}
