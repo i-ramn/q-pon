@@ -43,6 +43,9 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        & label {
+          color: $black;
+        }
         @include media-breakpoint-down(sm) {
           flex-direction: column-reverse;
           align-items: flex-start;
