@@ -3547,6 +3547,9 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.cabinet-advertisement--ads--top--selectors label {
+  color: #272628;
+}
 @media (max-width: 767.98px) {
   .cabinet-advertisement--ads--top--selectors {
     -webkit-box-orient: vertical;
