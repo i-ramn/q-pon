@@ -1,0 +1,125 @@
+.personal-cabinet-submit {
+  padding-bottom: 212px;
+}
+.step-button {
+  background: $light-grey;
+  padding: 9px 22px;
+  border-radius: 30px;
+  border: 1px solid $blue;
+  @include media-breakpoint-down(sm) {
+    width: 89px;
+    height: 38px;
+    padding: 10px 20px;
+  }
+}
+.placement-options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+.submit-container {
+  @include media-breakpoint-down(lg) {
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+}
+.placement-option {
+  background-color: $light-grey;
+  border-radius: 10px;
+  padding-bottom: 71px;
+  max-width: 480px;
+  justify-self: center;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 43px;
+  }
+  &--head {
+    background-color: $light-grey2;
+    padding: 35px 25px;
+    border-radius: inherit;
+    line-height: 140%;
+    color: $blue;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    @include media-breakpoint-down(md) {
+      padding: 25px 35px;
+    }
+    & label {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.125rem;
+      @include media-breakpoint-down(md) {
+        font-size: 1rem;
+      }
+    }
+    & input {
+      margin: 0
+    }
+    &--active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+.placement-option--head .active {
+
+}
+
+.placement-article-container {
+  padding: 0 25px;
+}
+.placement-article {
+  border-bottom: 1px solid $light-grey3;
+  min-height: 250px;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: $black;
+  padding-left: 60px;
+  padding-right: 60px;
+  @include media-breakpoint-down(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 0.875rem;
+    min-height: 180px;
+  }
+  &--title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $black;
+  }
+  &:last-child {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    color: $secondary-gray;
+  }
+}
+
+.button-next {
+  color: $white;
+  background: $blue;
+  grid-column: 2/3;
+  width: 351px;
+  height: 54px;
+  justify-self: flex-end;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  //background-image: url("../img/svg/arrow-next.svg");
+  //background-position: 80% center;
+  background: url("../img/svg/arrow-next.svg") $blue no-repeat 66% center;
+  @include media-breakpoint-down(sm) {
+    grid-column: 1/2;
+    width: 100%;
+  }
+}
