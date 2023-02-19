@@ -1,0 +1,67 @@
+<section class="container cabinet-advertisement">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Профиль</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+    <div class="balance-container">
+      <div class="balance">
+        <p>Баланс: <span>1500 ₽</span></p>
+      </div>
+      <p class="balance-up">Пополнить</p>
+    </div>
+  </div>
+  <div class="cabinet-advertisement--container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li>Профиль</li>
+        <li class="active">Мои объявления</li>
+        <li>История оплат</li>
+        <li>Статистика</li>
+      </ul>
+      <button class="btn-reset profile-navigation--button">
+        Создать объявление
+      </button>
+      <span class="logout">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+    <div class="cabinet-advertisement--ads">
+      <div class="cabinet-advertisement--ads--top">
+        <div class="cabinet-advertisement--ads--top--selectors">
+          <div>
+            <input type="checkbox" id="adsCheckbox"/>
+            <label for="adsCheckbox">Выбрать все</label>
+          </div>
+          <div class="dropdown-selector-container">
+            <div class="dropdown-selector">
+              Выбрать действие
+            </div>
+            <div class="dropdown-selector--content-container">
+              <div class="dropdown-selector--content">
+                <p class="dropdown-selector--content--item">Снять с публикации</p>
+                <p class="dropdown-selector--content--item">Удалить</p>
+                <p class="dropdown-selector--content--item">Редактировать</p>
+                <p class="dropdown-selector--content--item">Поднять топ в категории</p>
+                <p class="dropdown-selector--content--item">Поднять топ в подкатегории</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-advertisement--ads--toggle">
+          <button class="btn-reset cabinet-advertisement--button cabinet-advertisement--button--active">Активные</button>
+          <button class="btn-reset cabinet-advertisement--button">Архив</button>
+        </div>
+      </div>
+      @@include('../advertisement-card/index.html')
+      @@include('../advertisement-card/index.html')
+      @@include('../advertisement-card/index.html')
+      @@include('../advertisement-card/index.html')
+      @@include('../advertisement-card/index.html')
+      @@include('../advertisement-card/index.html')
+    </div>
+  </div>
+</section>
+
