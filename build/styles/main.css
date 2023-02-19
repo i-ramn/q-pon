@@ -3647,6 +3647,68 @@ footer {
   color: white;
 }
 
+.personal-cabinet-statistics-container {
+  padding-bottom: 123px;
+}
+
+.personal-cabinet-statistics {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+@media (max-width: 991.98px) {
+  .personal-cabinet-statistics {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.statistics-layout {
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+  width: 75%;
+  justify-self: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 36px 24px;
+}
+@media (max-width: 991.98px) {
+  .statistics-layout {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 24px;
+  }
+}
+
+.statistics-items--list {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.statistics-items--list li {
+  margin-bottom: 20px;
+}
+.statistics-items--list span {
+  font-weight: 700;
+  line-height: 20px;
+  color: #3C5ABC;
+  margin-left: 38px;
+}
+@media (max-width: 1199.98px) {
+  .statistics-items--list span {
+    margin-left: 20px;
+  }
+}
+
 .map-page {
   display: grid;
   grid-template-columns: 1fr 1fr;

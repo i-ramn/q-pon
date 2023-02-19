@@ -1,0 +1,48 @@
+.personal-cabinet-statistics-container {
+  padding-bottom: 123px;
+}
+
+.personal-cabinet-statistics {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.statistics-layout {
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+  width: 75%;
+  justify-self: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 24px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}
+.statistics-items {
+  &--list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    & li {
+      margin-bottom: 20px;
+    }
+    & span {
+      font-weight: 700;
+      line-height: 20px;
+      color: $blue;
+      margin-left: 38px;
+      @include media-breakpoint-down(lg) {
+        margin-left: 20px;
+      }
+    }
+  }
+}

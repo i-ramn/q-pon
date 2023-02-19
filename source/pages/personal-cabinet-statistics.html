@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<section class="container personal-cabinet-statistics-container">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Профиль</h1>
+    <span class="logout logout-mobile">
+        <img src="img/svg/power.svg" alt="">
+          Выйти
+      </span>
+    <div class="balance-container">
+      <div class="balance">
+        <p>Баланс: <span>1500 ₽</span></p>
+      </div>
+      <p class="balance-up">Пополнить</p>
+    </div>
+  </div>
+  <div class="personal-cabinet-statistics">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li>Профиль</li>
+        <li>Мои объявления</li>
+        <li>История оплат</li>
+        <li class="active">Статистика</li>
+      </ul>
+      <button class="btn-reset profile-navigation--button">
+        Создать объявление
+      </button>
+      <span class="logout">
+          <img src="img/svg/power.svg" alt="">
+          Выйти
+        </span>
+    </div>
+    <div class="statistics-layout">
+      <div class="statistics-items">
+        <ul class="statistics-items--list">
+          <li>Всего объявлений: <span>10</span></li>
+          <li>Активных: <span>200</span></li>
+          <li>Снятых с показа: <span>0</span></li>
+          <li>Просмотр объявлений: <span>125</span></li>
+          <li>Покупок: <span>12</span></li>
+          <li>Заработано: <span>15 000Р</span></li>
+        </ul>
+      </div>
+      <div class="dropdown-selector-container">
+          <div class="dropdown-selector">
+            За месяц
+          </div>
+          <div class="dropdown-selector--content-container">
+            <div class="dropdown-selector--content">
+              <p class="dropdown-selector--content--item">Снять с публикации</p>
+              <p class="dropdown-selector--content--item">Удалить</p>
+              <p class="dropdown-selector--content--item">Редактировать</p>
+              <p class="dropdown-selector--content--item">Поднять топ в категории</p>
+              <p class="dropdown-selector--content--item">Поднять топ в подкатегории</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="js/script.js"></script>
+</body>
+</html>
