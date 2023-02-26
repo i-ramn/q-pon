@@ -1,0 +1,165 @@
+<section class="container second-step">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Создать объявление</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+    <div class="step-button">
+      <span>Шаг 2</span>
+    </div>
+  </div>
+  <div class="profile-container submit-container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li >Профиль</li>
+        <li class="active">Мои объявления</li>
+        <li>История оплат</li>
+        <li>Статистика</li>
+      </ul>
+      <button class="btn-reset profile-navigation--button">
+        Создать объявление
+      </button>
+      <span class="logout">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+    <div class="form-container">
+      <div class="dropdown-selector-container dropdown-selector-container--common">
+        <label for="service">Тип объявления</label>
+        <div class="dropdown-selector" id="service">
+          Услуга
+        </div>
+        <div class="dropdown-selector--content-container ">
+          <div class="dropdown-selector--content">
+            <p class="dropdown-selector--content--item">Снять с публикации</p>
+            <p class="dropdown-selector--content--item">Удалить</p>
+          </div>
+        </div>
+      </div>
+      <div class="input-with-label">
+        <label for="advertisementCity">Город где будет подаваться объявление</label>
+        <div class="input-container input-container-with-label">
+          <input class="input-reset input" type="text" id="advertisementCity"  placeholder="Самара">
+        </div>
+      </div>
+      <div class="dropdown-selector-container dropdown-selector-container--common">
+        <label for="productCategory">Категория товара или услуги</label>
+        <div class="dropdown-selector" id="productCategory">
+          Красота
+        </div>
+        <div class="dropdown-selector--content-container ">
+          <div class="dropdown-selector--content">
+            <p class="dropdown-selector--content--item">город 1</p>
+            <p class="dropdown-selector--content--item">город 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-selector-container dropdown-selector-container--common">
+        <label for="subcategory">Подкатегория</label>
+        <div class="dropdown-selector" id="subcategory">
+          Шугаринг
+        </div>
+        <div class="dropdown-selector--content-container ">
+          <div class="dropdown-selector--content">
+            <p class="dropdown-selector--content--item">город 1</p>
+            <p class="dropdown-selector--content--item">город 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-selector-container dropdown-selector-container--common input-with-label--long">
+        <label for="discount">Размер предоставляемой скидки</label>
+        <div class="dropdown-selector" id="discount">
+          30%
+        </div>
+        <div class="dropdown-selector--content-container">
+          <div class="dropdown-selector--content">
+            <p class="dropdown-selector--content--item">50%</p>
+            <p class="dropdown-selector--content--item">70%</p>
+          </div>
+        </div>
+      </div>
+      <div class="input-with-label">
+        <label for="startTime">Начало действия</label>
+        <div class="input-container input-container-with-label">
+          <input class="input-reset input" type="text"  placeholder="Иванов" id="startTime">
+          <div class="input--edit input--calendar"></div>
+        </div>
+      </div>
+      <div class="input-with-label">
+        <label for="endDate">Конец действия</label>
+        <div class="input-container input-container-with-label">
+          <input class="input-reset input" type="text" placeholder="Иванов" id="endDate">
+          <div class="input--edit input--calendar"></div>
+        </div>
+      </div>
+      <div class="input-with-label input-with-label--long">
+        <label for="advertisementTitle">Заголовок обявления</label>
+        <div class="input-container input-container-with-label">
+          <input class="input-reset input" type="text"  placeholder="Посещения сеансов LPG-массажа всего тела в «Салоне красоты»" id="advertisementTitle">
+        </div>
+      </div>
+      <div class="input-with-label input-with-label--long">
+        <label for="shortDescription">Короткое описание</label>
+        <div class="input-container input-container-with-label">
+          <input class="input-reset input" type="text"  placeholder="Посещения сеансов LPG-массажа всего тела в «Салоне красоты»" id="shortDescription">
+        </div>
+      </div>
+      <div class="drag-n-drop">
+        <img src="img/svg/drag-n-drop.svg" alt="">
+        <span>Перетащите в это окно фотографии или нажмите на него</span>
+      </div>
+      <span class="drag-n-drop--description">Можно прикрепить до 10 фотографий
+        <br/>
+        и формата .jpg .jpeg .png
+      </span>
+      <div class="input-with-label input-with-label--long">
+        <label for="fullTitleDescription">Полное описание объявления</label>
+        <textarea id="fullTitleDescription" class="input-container input-container-with-label input-description-type text-area">
+        </textarea>
+      </div>
+      <div class="input-with-label input-with-label--long">
+        <label for="conditions">Ваша фамилия</label>
+        <textarea id="conditions" class="input-container input-container-with-label input-description-type text-area">
+        </textarea>
+      </div>
+
+      <div class="promotion-checkbox">
+        <input type="checkbox" id="adsCheckbox"/>
+        <label for="adsCheckbox">продвижения объявления в топ</label>
+      </div>
+
+      <div class="into-the-top">
+        <div class="dropdown-selector-container dropdown-selector-container--common dropdown-selector-container--common--white">
+          <label for="promotionPlace">Место продвижения</label>
+          <div class="dropdown-selector" id="promotionPlace">
+            Категория Красота
+          </div>
+          <div class="dropdown-selector--content-container ">
+            <div class="dropdown-selector--content">
+              <p class="dropdown-selector--content--item">город 1</p>
+              <p class="dropdown-selector--content--item">город 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown-selector-container dropdown-selector-container--common dropdown-selector-container--common--white">
+          <label for="promotionTerm">Срок продвижения</label>
+          <div class="dropdown-selector" id="promotionTerm">
+            мес
+          </div>
+          <div class="dropdown-selector--content-container ">
+            <div class="dropdown-selector--content">
+              <p class="dropdown-selector--content--item">2 мес</p>
+              <p class="dropdown-selector--content--item">3 мес</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="into-the-top--price">Стоимость размещения составит: 2 000 ₽</span>
+      </div>
+      <button class="btn-reset form-submit-button second-step-submit">Разместить объявление</button>
+    </div>
+  </div>
+</section>

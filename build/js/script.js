@@ -89,6 +89,24 @@ if (tabs && tabContent) {
   handleTabToggle()
 }
 
+
+const checkbox = document.getElementById('adsCheckbox')
+const intoTheTop = document.querySelector('.into-the-top')
+
+const toggleTopCheckbox = () => {
+  checkbox.addEventListener('click', () => {
+    if (checkbox.checked) {
+      intoTheTop.classList.add('into-the-top--active')
+    } else {
+      intoTheTop.classList.remove('into-the-top--active')
+    }
+  })
+}
+
+if (checkbox && intoTheTop) {
+  toggleTopCheckbox()
+}
+
 const headerSwiper = document?.querySelector('.mySwiper')
 
 const swiper = headerSwiper && new Swiper(headerSwiper, {
