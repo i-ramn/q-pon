@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<section class="container cabinet-advertisement">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Мои купоны</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+    <div class="balance-container">
+      <div class="balance balance--user-cabinet">
+        <p>Баллы G-pon: <span>125 баллов</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="cabinet-advertisement--container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li>Профиль</li>
+        <li>История оплат</li>
+        <li class="active">Мои купоны</li>
+        <li>Избранное</li>
+      </ul>
+      <span class="logout">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+    <div class="cabinet-advertisement--ads">
+      <div class="cabinet-advertisement--ads--top">
+        <div class="cabinet-advertisement--ads--top--selectors">
+
+          <div class="cabinet-advertisement--ads--toggle">
+            <button class="btn-reset cabinet-advertisement--button cabinet-advertisement--button--active">Действующие</button>
+            <button class="btn-reset cabinet-advertisement--button">Архивные</button>
+          </div>
+        </div>
+        <div class="cabinet-advertisement--ads--toggle">
+          <button class="map-button">Показать на карте</button>
+          <button class="map-button map-button--mobile">Показать</button>
+        </div>
+      </div>
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+    </div>
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="js/script.js"></script>
+</body>
+</html>

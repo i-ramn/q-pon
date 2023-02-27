@@ -173,6 +173,37 @@ h2 {
   display: block;
 }
 
+.map-button {
+  background-color: #3C5ABC;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  background-image: url("../img/svg/pin-white.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 15px;
+}
+@media (max-width: 767.98px) {
+  .map-button {
+    display: none;
+  }
+}
+.map-button--mobile {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .map-button--mobile {
+    display: block;
+    width: 118px;
+    font-size: 12px;
+    background-position-x: 10px;
+  }
+}
+
 .dropdown-btn {
   display: none;
 }
