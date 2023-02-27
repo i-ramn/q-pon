@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<section class="container cabinet-advertisement">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / История оплат</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+  </div>
+  <div class="user-payment-story--container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li>Профиль</li>
+        <li class="active">История оплат</li>
+        <li>Мои купоны</li>
+        <li>Избранное</li>
+      </ul>
+      <span class="logout">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+    <div class="table-container">
+      <div class="table-item table-container--title">
+        <span>Дата</span>
+        <span>Сумма</span>
+        <span>Статус</span>
+      </div>
+      <div class="table-item table-container--item">
+        <span>12.12.2022</span>
+        <span>1 000, 00 руб</span>
+        <span>Зачислено</span>
+      </div>
+      <div class="table-item table-container--item">
+        <span>12.12.2022</span>
+        <span>1 000, 00 руб</span>
+        <span>Зачислено</span>
+      </div>
+      <div class="table-item table-container--item">
+        <span>12.12.2022</span>
+        <span>1 000, 00 руб</span>
+        <span>Зачислено</span>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.user-payment-story--container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+
+  }
+  & .logout {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+.table-container {
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  color: $secondary-gray;
+  font-size: 1rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 0.875rem;
+  }
+  &--title {
+    background-color: $light-grey;
+    height: 64px;
+  }
+  &--item {
+    height: 75px;
+    border-bottom: 1px solid $light-grey;
+    @include media-breakpoint-down(sm) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.table-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 25px;
+}

@@ -3503,6 +3503,7 @@ footer {
     gap: 9.5px;
     -ms-flex-item-align: start;
         align-self: start;
+    color: #5C5C5C;
   }
 }
 
@@ -4045,6 +4046,56 @@ footer {
 }
 .into-the-top--active--price {
   font-weight: 600;
+}
+
+.user-payment-story--container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+}
+@media (max-width: 767.98px) {
+  .user-payment-story--container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .user-payment-story--container .logout {
+    display: none;
+  }
+}
+
+.table-container {
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  color: #5C5C5C;
+  font-size: 1rem;
+}
+@media (max-width: 767.98px) {
+  .table-container {
+    font-size: 0.875rem;
+  }
+}
+.table-container--title {
+  background-color: #F3F2F5;
+  height: 64px;
+}
+.table-container--item {
+  height: 75px;
+  border-bottom: 1px solid #F3F2F5;
+}
+@media (max-width: 767.98px) {
+  .table-container--item {
+    font-size: 0.75rem;
+  }
+}
+
+.table-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
 }
 
 .map-page {
