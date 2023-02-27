@@ -176,6 +176,9 @@
   & span {
     color: $blue;
   }
+  &--user-cabinet {
+    max-width: 250px;
+  }
 }
 
 .balance-up {

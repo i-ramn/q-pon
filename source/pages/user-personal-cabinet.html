@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<section class="container personal-cabinet">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Профиль</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+    <div class="balance-container">
+      <div class="balance balance--user-cabinet">
+        <p>Баллы G-pon: <span>125 баллов</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li class="active">
+          Профиль
+        </li>
+        <li>Мои объявления</li>
+        <li>История оплат</li>
+        <li>Статистика</li>
+      </ul>
+      <span class="logout">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+
+
+
+
+    <div class="profile-info">
+      <form class="profile-info--form">
+        <div>
+          <label class="profile-info--label" for="userProfileName">Введите Ваше имя</label>
+          <div class="input-container">
+            <input class="input-reset input" type="text" id="userProfileName" placeholder="Иван">
+            <div class="input--edit"></div>
+          </div>
+        </div>
+        <div>
+          <label for="userProfileSecondName">Введите Вашу фамилию</label>
+          <div class="input-container">
+            <input class="input-reset input" type="text" id="userProfileSecondName" placeholder="Иванов">
+            <div class="input--edit"></div>
+          </div>
+        </div>
+        <div>
+          <label for="userProfilePhone">Номер телефона</label>
+          <div class="input-container">
+            <input class="input-reset input" type="tel" id="userProfilePhone" placeholder="+7 (999) 978 - 54 - 52">
+          </div>
+        </div>
+        <div>
+          <label for="userProfileEmail">Ваш Email</label>
+          <div class="input-container">
+            <input class="input-reset input" id="userProfileEmail" type="email" placeholder="info@mail.ru">
+            <div class="input--edit"></div>
+          </div>
+        </div>
+        <div class="dropdown-selector-container dropdown-selector-container--common">
+          <label for="userProfileCity">Город</label>
+          <div class="dropdown-selector" id="userProfileCity">
+            Самара
+          </div>
+          <div class="dropdown-selector--content-container ">
+            <div class="dropdown-selector--content">
+              <p class="dropdown-selector--content--item">Москва</p>
+              <p class="dropdown-selector--content--item">Санкт-Петербург</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+@@include('components/footer/index.html')
+<script src="js/script.js"></script>
+</body>
+</html>
