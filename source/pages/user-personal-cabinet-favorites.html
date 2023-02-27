@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<section class="container cabinet-advertisement">
+  <div class="title-container">
+    <h1 class="personal-cabinet--title">Личный кабинет / Избранное</h1>
+    <span class="logout logout-mobile">
+      <img src="img/svg/power.svg" alt="">
+        Выйти
+    </span>
+  </div>
+  <div class="cabinet-advertisement--container">
+    <div class="profile-navigation user-profile">
+      <ul class="profile-navigation--list">
+        <li>Профиль</li>
+        <li>История оплат</li>
+        <li>Мои купоны</li>
+        <li class="active">Избранное</li>
+      </ul>
+      <span class="logout logout--common">
+        <img src="img/svg/power.svg" alt="">
+        Выйти
+      </span>
+    </div>
+    <div class="cabinet-advertisement--ads">
+      <div class="cabinet-advertisement--ads--top">
+        <div class="cabinet-advertisement--ads--top--selectors">
+
+          <div class="dropdown-selector-container dropdown-selector-container--common">
+            <div class="dropdown-selector favorites-dropdown" id="service">
+              Услуга
+            </div>
+            <div class="dropdown-selector--content-container ">
+              <div class="dropdown-selector--content">
+                <p class="dropdown-selector--content--item">Снять с публикации</p>
+                <p class="dropdown-selector--content--item">Удалить</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet-advertisement--ads--toggle">
+          <button class="map-button">Показать на карте</button>
+          <button class="map-button map-button--mobile">Показать</button>
+        </div>
+      </div>
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+      @@include('components/advertisement-card/index.html')
+    </div>
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="js/script.js"></script>
+</body>
+</html>

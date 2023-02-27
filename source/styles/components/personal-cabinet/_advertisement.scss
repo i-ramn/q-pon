@@ -1,5 +1,12 @@
 .cabinet-advertisement {
   padding-bottom: 200px;
+  & .logout {
+    &--common {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
   @include media-breakpoint-down(sm) {
     padding-top: 40px;
     padding-bottom: 80px;

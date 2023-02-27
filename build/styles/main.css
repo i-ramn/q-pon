@@ -3511,6 +3511,11 @@ footer {
   padding-bottom: 200px;
 }
 @media (max-width: 767.98px) {
+  .cabinet-advertisement .logout--common {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
   .cabinet-advertisement {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -4096,6 +4101,22 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px;
+}
+
+.favorites-dropdown {
+  border: none;
+  min-width: 204px;
+  color: #272628;
+  font-weight: 700;
+  font-size: 18px;
+  background-image: none;
+}
+.favorites-dropdown::after {
+  content: url("../img/svg/arrow-down-black.svg");
+  margin-left: 25px;
+  width: 12px;
+  height: 7.42px;
+  margin-top: -10px;
 }
 
 .map-page {

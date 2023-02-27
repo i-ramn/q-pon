@@ -39,3 +39,19 @@
   align-items: center;
   padding: 25px;
 }
+
+.favorites-dropdown {
+  border: none;
+  min-width: 204px;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  background-image: none;
+  &::after {
+    content: url("../img/svg/arrow-down-black.svg");
+    margin-left: 25px;
+    width: 12px;
+    height: 7.42px;
+    margin-top: -10px;
+  }
+}
