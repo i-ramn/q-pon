@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+
+<body class="test">
+@@include('components/header/index.html')
+<div class="breadcrumb">
+  <div class="container breadcrumb--container">
+    <a>
+      Главная
+    </a>
+    <img class="breadcrumb--divider" src="img/svg/arrow-down-gray.svg">
+    <a>
+      Блог
+    </a>
+  </div>
+</div>
+<section class="container blog-preview--container">
+  <h1 class="blog-title">Блог</h1>
+  <div class="blog-list--container">
+    @@include('components/blog/blog-preview.html')
+    @@include('components/blog/blog-preview.html')
+    @@include('components/blog/blog-preview.html')
+    @@include('components/blog/blog-preview.html')
+    @@include('components/blog/blog-preview.html')
+    @@include('components/blog/blog-preview.html')
+  </div>
+  <div class="pagination">
+    <img class="pagination--start-arrow" src="img/svg/arrow-down-gray.svg" alt="">
+    <div class="pagination--item">2</div>
+    <div class="pagination--item">3</div>
+    <div class="pagination--item">4</div>
+    <div>... </div>
+    <div class="pagination--item">123</div>
+    <img class="pagination--end-arrow" src="img/svg/arrow-down-gray.svg" alt="">
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
