@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+@@include('components/head.html')
+<body class="test">
+@@include('components/header/index.html')
+<div class="breadcrumb">
+  <div class="container breadcrumb--container">
+    <a>
+      Главная
+    </a>
+    <img class="breadcrumb--divider" src="img/svg/arrow-down-gray.svg">
+    <a>
+      Рейтинг
+    </a>
+  </div>
+</div>
+<section class="container rating">
+  <h1 class="rating--title">Рейтинг компаний</h1>
+  <div class="rating--container container">
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    @@include('components/rating/rating-block.html')
+    <div class="pagination">
+      <img class="pagination--start-arrow" src="img/svg/arrow-down-gray.svg" alt="">
+      <div class="pagination--item pagination--item--active">2</div>
+      <div class="pagination--item">3</div>
+      <div class="pagination--item">4</div>
+      <div>... </div>
+      <div class="pagination--item">123</div>
+      <img class="pagination--end-arrow" src="img/svg/arrow-down-gray.svg" alt="">
+    </div>
+  </div>
+</section>
+@@include('components/footer/index.html')
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

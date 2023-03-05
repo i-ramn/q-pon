@@ -1,0 +1,14 @@
+.rating--container {
+  max-width: 1248px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  & .pagination {
+    margin-top: 42px;
+  }
+  padding-bottom: 120px;
+}
+.rating--title {
+  font-size: 1.875rem;
+  margin-bottom: 66px;
+}

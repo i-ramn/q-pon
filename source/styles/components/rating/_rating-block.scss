@@ -1,0 +1,65 @@
+.rating-block {
+  min-height: 64px;
+  background: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 39px;
+  padding-right: 21px;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  gap: 10px;
+  flex-wrap: wrap;
+  cursor: default;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &--company-number {
+    display: flex;
+    width: 248px;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &--number {
+
+  }
+
+  &--company-name {
+
+  }
+  &--category-container {
+    display: flex;
+    justify-content: space-between;
+    width: 221px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &--category {
+    color: $secondary-gray;
+  }
+  &--category-type {
+    font-weight: 600;
+  }
+  &--rating-container {
+    display: flex;
+    width: 248px;
+    justify-content: space-between;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  &--rating-title {
+    color: $secondary-gray;
+  }
+  &--rating {
+    font-weight: 700;
+    color: $blue;
+  }
+  &--stars {
+
+  }
+}
