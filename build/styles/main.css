@@ -4367,6 +4367,12 @@ footer {
   font-size: 1.875rem;
   margin-bottom: 66px;
 }
+@media (max-width: 767.98px) {
+  .rating--title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
 
 .rating-block {
   min-height: 64px;
@@ -4455,6 +4461,68 @@ footer {
   font-weight: 700;
   color: #3C5ABC;
 }
+.about-us-page {
+  padding-bottom: 120px;
+}
+@media (max-width: 991.98px) {
+  .about-us-page {
+    margin-bottom: 65px;
+  }
+}
+.about-us-page--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 90px;
+}
+@media (max-width: 991.98px) {
+  .about-us-page--container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+}
+.about-us-page--article {
+  max-width: 736px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #5C5C5C;
+  line-height: 140%;
+}
+@media (max-width: 991.98px) {
+  .about-us-page--article {
+    font-size: 0.875rem;
+  }
+}
+.about-us-page--img {
+  max-width: 506px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+@media (max-width: 767.98px) {
+  .about-us-page--img {
+    width: 100%;
+  }
+}
+
+.page-title {
+  font-size: 1.875rem;
+  margin-bottom: 66px;
+}
+@media (max-width: 767.98px) {
+  .page-title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
+
 .map-page {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,0 +1,41 @@
+.about-us-page {
+  padding-bottom: 120px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 65px;
+  }
+  &--container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &--article {
+    max-width: 736px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: $secondary-gray;
+    line-height: 140%;
+    @include media-breakpoint-down(md) {
+      font-size: 0.875rem;
+    }
+  }
+  &--img {
+    max-width: 506px;
+    object-fit: contain;
+    align-self: center;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+.page-title {
+  font-size: 1.875rem;
+  margin-bottom: 66px;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
